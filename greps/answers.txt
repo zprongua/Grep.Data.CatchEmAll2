@@ -1,37 +1,76 @@
 # Part 1
 ### a)
+ggrep -P "^beed" filescan_00.1 > ../captured/beedrill.txt
+ggrep -P "^blas" filescan_00.1 > ../captured/blastoise.txt
+ggrep -P "^butt" filescan_00.1 > ../captured/butterfree.txt
+ggrep -P "^bulb" filescan_00.1 > ../captured/bulbasaur.txt
 
+ggrep -P "izard$" filescan_00.2 > ../captured/charizard.txt
+ggrep -P "mander$" filescan_00.2 > ../captured/charmander.txt
+ggrep -P "meleon$" filescan_00.2 > ../captured/charmeleon.txt
 
+ggrep -P "^ivys" filescan_00.3 > ../captured/ivysaur.txt
+ggrep -P "^jigg" filescan_00.3 > ../captured/jigglypuff.txt
+ggrep -P "^meow" filescan_00.3 > ../captured/meowth
+ggrep -P "^pika" filescan_00.3 > ../captured/pikachu.txt
 
+ggrep -P "^p" filescan_00.4 > ../captured/psyduck.txt
+ggrep -P "^s" filescan_00.4 > ../captured/squirtle.txt
+ggrep -P "^v" filescan_00.4 > ../captured/venusaur.txt
+ggrep -P "^w" filescan_00.4 > ../captured/wartortle.txt
 
 ### b)
-
-
+beedrill.txt
+blastoise.txt
+butterfree.txt
+bulbasaur.txt
+charizard.txt
+charmander.txt
+charmeleon.txt
+ivysaur.txt
+jigglypuff.txt
+meowth.txt
+pikachu.txt
+psyduck.txt
+squirtle.txt
+venusaur.txt
+wartortle.txt
 
 ### c)
+filescan_00.1
+    beedrill
+    blastoise
+    butterfree
+    bulbasaur
 
+filescan_00.2
+    charizard
+    charmander
+    charmeleon
 
+filescan_00.3
+    ivysaur
+    jigglypuff
+    meowth
+    pikachu
 
-
-
-
-
-
-
-
-
-
+filescan_00.4
+    psyduck
+    squirtle
+    venusaur
+    wartortle
 
 # Part 2
 ### a)
-
-
-
-
-
+ls | ggrep -v '^inst' | wc -l     (15)
 
 ### b)
+beedrill
+charizard
+pikachu
 
+wc -l
+ggrep -c ^ *.txt
 
 
 
